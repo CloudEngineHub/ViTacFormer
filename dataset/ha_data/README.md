@@ -1,5 +1,5 @@
 # ha_data
-- 安装库
+- Install
     ```
     pip install -e .
     ```
