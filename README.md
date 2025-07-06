@@ -22,7 +22,7 @@
 
 ### Example Usages
 
-Please download example data in ... To train ViTacFormer, run:
+Please download and unzip the example data [here](https://drive.google.com/file/d/1GzQSymfzw2YDY0VtCyutV5LnmFRbu0nm/view?usp=sharing). To train ViTacFormer, run:
 
     conda activate vitacformer
     bash train.sh
