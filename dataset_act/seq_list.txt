@@ -1,1 +1,0 @@
-/mnt/netdata/Team/Robot/Data/train/dh_hamburger/v3/0322_TMODE1/season_arm01_2025_03_22_11_29_04_train/arm01_2025_03_22_11_29_04_train/train_0.2.2@2025_03_22_11_29_04.hdf5
