@@ -10,7 +10,8 @@
   <a href="https://github.com/RoboVerseOrg/ViTacFormer/issues"><img src="https://img.shields.io/github/issues/RoboVerseOrg/ViTacFormer?color=yellow" alt="Issues"></a>
 </p>
 
-### Installation
+
+## Installation
 
     conda create -n vitacformer python=3.8.10
     conda activate vitacformer
@@ -28,9 +29,23 @@
     cd dataset/ha_data && pip install -e .
     cd detr && pip install -e .
 
-### Example Usages
+## Example Usages
 
 Please download and unzip the example data [here](https://drive.google.com/file/d/1GzQSymfzw2YDY0VtCyutV5LnmFRbu0nm/view?usp=sharing). To train ViTacFormer, run:
 
     conda activate vitacformer
     bash train.sh
+
+## Citation
+If you find RoboVerse useful, please consider citing it:
+```bibtex
+@misc{heng2025vitacformerlearningcrossmodalrepresentation,
+      title={ViTacFormer: Learning Cross-Modal Representation for Visuo-Tactile Dexterous Manipulation}, 
+      author={Liang Heng and Haoran Geng and Kaifeng Zhang and Pieter Abbeel and Jitendra Malik},
+      year={2025},
+      eprint={2506.15953},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2506.15953}, 
+}
+```
