@@ -13,7 +13,9 @@
 
 ![hardware](assets/hardware.jpg)
 
+Our hardware setup consists of an **active vision system**, a **bi-manual robot arm**, and **two high-DoF dexterous hands (SharpaWave)** equipped with **high-resolution tactile sensors**.
 
+To enable rich data collection, we use a **teleoperation system** with **precision exoskeleton**  for fine-grained arm and finger control, plus a **VR interface** to control the camera and guide demonstrations.
 
 ## Installation
 
