@@ -29,22 +29,22 @@ def load_mesh(stl_dir, mesh_file, downsample):
         current_vertices = len(mesh.vertices)
         target_vertices = current_vertices // downsample
 
-        # 随机选择顶点的索引
+
         indices = np.random.choice(current_vertices, target_vertices, replace=False)
 
-        # 创建一个索引映射表，保留的顶点索引对应新索引
+
         index_map = {old_index: new_index for new_index, old_index in enumerate(indices)}
 
-        # 筛选出只包含保留顶点的面
+
         new_faces = []
         for face in mesh.faces:
             if all(vertex in index_map for vertex in face):
                 new_faces.append([index_map[vertex] for vertex in face])
 
-        # 转换为 NumPy 数组
+
         new_faces = np.array(new_faces)
 
-        # 生成下采样后的网格
+
         downsampled_vertices = mesh.vertices[indices]
         downsampled_mesh = trimesh.Trimesh(vertices=downsampled_vertices, faces=new_faces)
         mesh = downsampled_mesh
@@ -65,14 +65,7 @@ class LoadUrdfPoints(object):
         env=False,
         debug=False,
     ):
-        """
-        NOTE: 40ms, 速度依然较慢
 
-        stl_dir: 存放mesh的文件夹路径
-        ja_cfg: dict(name="", index=[]), 应使用当前state下的joint angle信息
-        exclude_links: 不需要加载的点云
-        downsample: 暂时不支持
-        """
         self.urdf_path = urdf_path
         self.stl_dir = stl_dir
         self.ja_cfg = ja_cfg
