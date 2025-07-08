@@ -1,6 +1,14 @@
 # ViTacFormer: Learning Cross-Modal Representation for Visuo-Tactile Dexterous Manipulation
 
-#### Project Website: https://roboverseorg.github.io/ViTacFormerPage/
+![teaser](assets/teaser.jpg)
+
+
+<p align="center">
+  <a href="https://roboverseorg.github.io/ViTacFormerPage/"><img src="https://img.shields.io/badge/project-page-brightgreen" alt="Project Page"></a>
+  <a href="https://arxiv.org/abs/2506.15953"><img src="https://img.shields.io/badge/paper-preprint-red" alt="Paper"></a>
+  <a href="https://roboverse.wiki"><img src="https://img.shields.io/badge/doc-page-orange" alt="Documentation"></a>
+  <a href="https://github.com/RoboVerseOrg/ViTacFormer/issues"><img src="https://img.shields.io/github/issues/RoboVerseOrg/ViTacFormer?color=yellow" alt="Issues"></a>
+</p>
 
 ### Installation
 
