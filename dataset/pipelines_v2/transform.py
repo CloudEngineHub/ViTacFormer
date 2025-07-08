@@ -30,9 +30,7 @@ class ImageProcess(object):
         aug_conf=dict(),
         debug=False,
     ):
-        """
-        加载图像,同时不同key的图像应对应于不同的处理方式,即支持不同大小的图像作为输入
-        """
+
         self.key = key
         self.cam_preprocess_info = camera_preprcess_info
 
@@ -252,11 +250,7 @@ class ImageBackgroundAugment(object):
         segmentation_src,
         debug=False,
     ):
-        """
-        利用分割结果对图像背景进行数据增强，随机替换分割背景为其他图片
-        分割标注结果:
-            season-episode-index.png
-        """
+
         self.key = key
         self.background_src = background_src
         self.segmentation_src = segmentation_src
