@@ -358,27 +358,27 @@ def get_norm_stats(
 def debug_show_histogram(action_all, prefix="abs"):
     fig, axs = plt.subplots(3, 1, figsize=(12, 10))  
 
-    # 绘制第一个直方图  
+
     axs[0].hist(action_all[:,1], bins=1024, color='blue', alpha=0.7, edgecolor='black')  
     axs[0].set_title('x')  
     axs[0].set_xlabel('Value')  
     axs[0].set_ylabel('Frequency')  
     axs[0].set_yscale('log')  
 
-    # 绘制第二个直方图  
+
     axs[1].hist(action_all[:,2], bins=1024, color='green', alpha=0.7, edgecolor='black')  
     axs[1].set_title('y')  
     axs[1].set_xlabel('Value')  
     axs[1].set_ylabel('Frequency')
     axs[1].set_yscale('log') 
 
-    # 绘制第三个直方图  
+
     axs[2].hist(action_all[:,3], bins=1024, color='red', alpha=0.7, edgecolor='black')  
     axs[2].set_title('z')  
     axs[2].set_xlabel('Value')  
     axs[2].set_ylabel('Frequency')
     axs[2].set_yscale('log') 
-    # 保存图形到硬盘  
+
     plt.savefig(f'{prefix}_action.png', format='png', dpi=300)
     print(f"save {prefix}_action.png")
 
