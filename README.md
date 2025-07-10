@@ -1,4 +1,7 @@
-# ViTacFormer: Learning Cross-Modal Representation for Visuo-Tactile Dexterous Manipulation
+
+<p align="center">
+  <h1 align="center">ViTacFormer: Learning Cross-Modal Representation for Visuo-Tactile Dexterous Manipulation</h1>
+</p>
 
 ![teaser](assets/teaser.jpg)
 
