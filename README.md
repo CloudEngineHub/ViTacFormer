@@ -46,7 +46,7 @@ Please download and unzip the example data [here](https://drive.google.com/file/
     bash train.sh
 
 ## Citation
-If you find RoboVerse useful, please consider citing it:
+If you find ViTacFormer useful, please consider citing it:
 ```bibtex
 @misc{heng2025vitacformerlearningcrossmodalrepresentation,
       title={ViTacFormer: Learning Cross-Modal Representation for Visuo-Tactile Dexterous Manipulation}, 
